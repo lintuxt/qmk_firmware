@@ -92,13 +92,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [4] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-        TG(4), XXXXXXX, XXXXXXX,  MAG_C3, MAG_TL, MAG_L13,                      MAG_R13, MAG_TR, MAG_UP, XXXXXXX, XXXXXXX, MAG_RST,
+        TG(4), XXXXXXX, MAG_L23, XXXXXXX, MAG_R23, XXXXXXX,                      XXXXXXX,  MAG_TL,  MAG_UP,  MAG_TR, XXXXXXX, MAG_RST,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, MAG_HL,                      MAG_HR, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+      XXXXXXX, XXXXXXX, MAG_L13,  MAG_C3, MAG_R13, XXXXXXX,                      XXXXXXX,  MAG_HL,   MAG_C,  MAG_HR, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      XXXXXXX, XXXXXXX, XXXXXXX,  MAG_PD,MAG_BL, MAG_L23,                      MAG_R23, MAG_BR, MAG_ND, XXXXXXX, XXXXXXX, XXXXXXX,
+      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  MAG_PD,                       MAG_ND,  MAG_BL,MAG_DOWN,  MAG_BR, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                          XXXXXXX, XXXXXXX, MAG_C,    MAG_MAX, XXXXXXX, XXXXXXX
+                                          XXXXXXX, XXXXXXX,   MAG_C,    MAG_MAX, XXXXXXX, XXXXXXX
                                       //`--------------------------'  `--------------------------'
   )
 };
