@@ -12,7 +12,7 @@ BACKLIGHT_ENABLE = no
 RGBLIGHT_ENABLE = no
 AUDIO_ENABLE = no
 RGB_MATRIX_ENABLE = yes		# Modified
-TAP_DANCE_ENABLE = yes		# Added
+TAP_DANCE_ENABLE = no		# Added
 
 
 DEFAULT_FOLDER = crkbd/rev1

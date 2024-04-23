@@ -110,13 +110,13 @@ void mag(uint16_t code) {
     SEND_STRING(SS_DELAY(100) SS_UP(X_LCTL) SS_UP(X_RALT));
 }
 
-enum {
-    XCODE_LAYER
-};
+// enum {
+//     XCODE_LAYER
+// };
 
-tap_dance_action_t tap_dance_actions[] = {
-    [XCODE_LAYER] = ACTION_TAP_DANCE_LAYER_TOGGLE(KC_LSFT, 6)
-};
+// tap_dance_action_t tap_dance_actions[] = {
+//     [XCODE_LAYER] = ACTION_TAP_DANCE_LAYER_TOGGLE(KC_LSFT, 6)
+// };
 
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -126,7 +126,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
         KC_LCTL,    KC_A,    KC_S,    KC_D,    KC_F,    KC_G,                         KC_H,    KC_J,    KC_K,    KC_L, KC_SCLN, KC_QUOT,
     //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-TD(XCODE_LAYER),    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                         KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH, KC_RSFT,
+        KC_LSFT,    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                         KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH, KC_RSFT,
     //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                    KC_LGUI,   MO(2),  KC_SPC,              KC_ENT,   MO(3), KC_RALT
                                //`-----------------------------------'  `--------------------------'
@@ -138,7 +138,7 @@ TD(XCODE_LAYER),    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                   
     //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
         KC_LCTL,    KC_A,    KC_R,    KC_S,    KC_T,    KC_D,                         KC_H,    KC_N,    KC_E,    KC_I,    KC_O, KC_QUOT,
     //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-TD(XCODE_LAYER),    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                         KC_K,    KC_M, KC_COMM,  KC_DOT, KC_SLSH, KC_RSFT,
+        KC_LSFT,    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                         KC_K,    KC_M, KC_COMM,  KC_DOT, KC_SLSH, KC_RSFT,
     //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                    KC_LGUI,   MO(2),  KC_SPC,              KC_ENT,   MO(3), KC_RALT
                                //`-----------------------------------'  `--------------------------'
@@ -152,7 +152,7 @@ TD(XCODE_LAYER),    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                   
     //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
         KC_LSFT, KC_AMPR, KC_ASTR, KC_PIPE, KC_LCBR, KC_RCBR,                      KC_BSLS, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
     //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                            KC_LGUI, _______,  KC_SPC,     KC_ENT,   MO(4), KC_RALT
+                                              TG(6), _______,  KC_SPC,     KC_ENT,   MO(4), KC_RALT
                                         //`--------------------------'  `--------------------------'
     ),
 
@@ -212,7 +212,7 @@ TD(XCODE_LAYER),    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                   
     //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
         KC_LSFT, KC_AMPR, KC_ASTR, KC_PIPE, KC_LCBR, KC_RCBR,                      KC_BSLS, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
     //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                            KC_LGUI, KC_LALT,  KC_SPC,     KC_ENT, XXXXXXX, _______
+                                            KC_LGUI, KC_LALT,  KC_SPC,     KC_ENT,   TG(6), _______
                                         //`--------------------------'  `--------------------------'
     ),
 
@@ -224,7 +224,7 @@ TD(XCODE_LAYER),    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                   
     //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
         KC_LSFT,    KC_7,    KC_8,    KC_9, XXXXXXX, XXXXXXX,                      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
     //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                            KC_LGUI, KC_LALT,  KC_SPC,     KC_ENT, _______, XXXXXXX
+                                            KC_LGUI, KC_LALT,  KC_SPC,     KC_ENT, _______,    TG(6)
                                         //`--------------------------'  `--------------------------'
     )
 };
