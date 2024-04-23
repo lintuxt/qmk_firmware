@@ -115,7 +115,7 @@ enum {
 };
 
 tap_dance_action_t tap_dance_actions[] = {
-    [XCODE_LAYER] = ACTION_TAP_DANCE_LAYER_TOGGLE(KC_LGUI, 6)
+    [XCODE_LAYER] = ACTION_TAP_DANCE_LAYER_TOGGLE(KC_LSFT, 6)
 };
 
 
@@ -126,9 +126,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
         KC_LCTL,    KC_A,    KC_S,    KC_D,    KC_F,    KC_G,                         KC_H,    KC_J,    KC_K,    KC_L, KC_SCLN, KC_QUOT,
     //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-        KC_LSFT,    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                         KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH, KC_RSFT,
+TD(XCODE_LAYER),    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                         KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH, KC_RSFT,
     //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                    TD(XCODE_LAYER),   MO(2),  KC_SPC,     KC_ENT,   MO(3), KC_RALT
+                                   KC_LGUI,   MO(2),  KC_SPC,              KC_ENT,   MO(3), KC_RALT
                                //`-----------------------------------'  `--------------------------'
     ),
 
@@ -138,9 +138,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
         KC_LCTL,    KC_A,    KC_R,    KC_S,    KC_T,    KC_D,                         KC_H,    KC_N,    KC_E,    KC_I,    KC_O, KC_QUOT,
     //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-        KC_LSFT,    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                         KC_K,    KC_M, KC_COMM,  KC_DOT, KC_SLSH, KC_RSFT,
+TD(XCODE_LAYER),    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                         KC_K,    KC_M, KC_COMM,  KC_DOT, KC_SLSH, KC_RSFT,
     //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                    TD(XCODE_LAYER),   MO(2),  KC_SPC,     KC_ENT,   MO(3), KC_RALT
+                                   KC_LGUI,   MO(2),  KC_SPC,              KC_ENT,   MO(3), KC_RALT
                                //`-----------------------------------'  `--------------------------'
     ),
 

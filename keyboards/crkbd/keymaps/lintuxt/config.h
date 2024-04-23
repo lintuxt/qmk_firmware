@@ -6,7 +6,7 @@
 
 #define USE_SERIAL_PD2
 
-#define TAPPING_TERM 175
+#define TAPPING_TERM 125
 #define TAPPING_TERM_PER_KEY
 
 #ifdef RGB_MATRIX_ENABLE
